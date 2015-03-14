@@ -2,8 +2,7 @@ Images for site {{id}}
 
 <ul>
   {{#each image in images}}
-   make a link
-   <li>{{#link-to 'site.images' model}}{{image.date}} - {{image.url}}{{/link-to}}</li>
+   <li>{{#link-to 'sites.site.images.image' image}}{{image.date}} - {{image.url}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
