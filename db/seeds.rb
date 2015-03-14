@@ -13,7 +13,7 @@
   3.times do |image_i|
     site.images.create(
       captured_at: Time.now,
-      url: "http://google.com?q=#{image_i}",
+      url: "http://google.com?q=#{image_i}-#{i}",
     )
   end
 end
