@@ -2,11 +2,10 @@
 
 Points:
 
-{{model}}
-
-{{#each point in model}}
-  {{point}}
-  {{point.description}}
-{{/each}}
+<ul>
+  {{#each point in model}}
+    <li>{{point.description}}</li>
+  {{/each}}
+</ul>
 
 {{outlet}}
