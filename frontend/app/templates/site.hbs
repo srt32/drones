@@ -1,0 +1,9 @@
+Images for site {{id}}
+
+<ul>
+  {{#each image in images}}
+   <li>{{#link-to 'image' image}}{{image.capturedAt}} - {{image.url}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}

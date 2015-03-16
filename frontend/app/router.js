@@ -6,10 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('sites', { path: "/" }, function() {
-    this.route('site', { path: "sites/:site_id" }, function() {
-      this.route('images', function() {
-        this.route('image', { path: "/:image_id" });
+  this.resource('sites', { path: "/" }, function() {
+    this.resource('site', { path: "sites/:site_id" }, function() {
+      this.resource('images', function() {
+        this.resource('image', { path: "/:image_id" });
       });
     });
   });

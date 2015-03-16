@@ -6,6 +6,6 @@ export default Ember.Route.extend({
   },
 
   afterModel: function(sites, transition) {
-    this.transitionTo('sites.site', sites.get('firstObject'));
+    this.transitionTo('site', sites.get('firstObject'));
   }
 });
