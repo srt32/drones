@@ -9,7 +9,9 @@ Router.map(function() {
   this.route('sites', { path: "/" }, function() {
     this.route('site', { path: "sites/:site_id" }, function() {
       this.route('images', function() {
-        this.route('image', { path: "/:image_id" });
+        this.route('image', { path: "/:image_id" }, function() {
+          this.route('points');
+        });
       });
     });
   });

@@ -2,7 +2,7 @@ Images for site {{id}}
 
 <ul>
   {{#each image in images}}
-   <li>{{#link-to 'sites.site.images.image' image}}{{image.capturedAt}} - {{image.url}}{{/link-to}}</li>
+   <li>{{#link-to 'image.index' image}}{{image.capturedAt}} - {{image.url}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
